@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalorieLog</string>
+    <string name="entries_for">Entries for %1$s</string>
+    <string name="calories_value">%1$d cal</string>
+</resources>
