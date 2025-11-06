@@ -3,17 +3,18 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
+    id("kotlin-kapt")
 }
 
 android {
     namespace = "com.example.calorielog"
 
-    // Use stable SDK 35 for smoothest setup. (If you've installed 36, set both to 36.)
     compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.calorielog"
         minSdk = 26
+        //noinspection OldTargetApi
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -21,7 +22,7 @@ android {
         vectorDrawables { useSupportLibrary = true }
     }
 
-    buildFeatures { compose = true } // Compose plugin handles compiler version on Kotlin 2.x
+    buildFeatures { compose = true }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_21
@@ -36,7 +37,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.recyclerview)
-    // Compose BOM pins versions for all Compose artifacts.
+    
     val composeBom = platform("androidx.compose:compose-bom:2025.10.00")
     implementation(composeBom)
     androidTestImplementation(composeBom)
@@ -64,9 +65,30 @@ dependencies {
 
     // Images
     implementation(libs.coil.compose)
+    implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
+    implementation(libs.logging.interceptor)
+    implementation(libs.glide)
+    ksp(libs.compiler) // or use GlideApp if you prefer
+    implementation(libs.glide)
+    ksp(libs.glide.compiler)
+    implementation(libs.glide)
+    ksp(libs.compiler)
+    ksp(libs.compiler)
+
+
+
+
+
 
     // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit.v130)
     androidTestImplementation(libs.androidx.espresso.core.v370)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.work.runtime.ktx.v291)
+
+
 }
+
+

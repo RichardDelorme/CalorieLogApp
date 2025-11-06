@@ -32,11 +32,23 @@
         tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/btnViewLog"
-        android:text="View Daily Log"
+        android:id="@+id/btnViewDailyLog"
+        android:text="@string/btn_daily_log"
+        android:minHeight="56dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        tools:ignore="HardcodedText,VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize" />
+
+
+    <Button
+        android:id="@+id/btnAttachPhoto"
+        android:text="@string/btn_attach_photo"
+        android:minHeight="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:ignore="VisualLintButtonSize" />
+
 
 </LinearLayout>

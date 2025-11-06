@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">CalorieLog</string>
+    <string name="get_started">GET STARTED</string>
     <string name="entries_for">Entries for %1$s</string>
+    <string name="total_calories_value">Total: %1$d cal</string>
+    <string name="main_menu_title">Calorie Log</string>
+    <string name="btn_add_entry">Add Entry</string>
+    <string name="btn_daily_log">Daily Log</string>
+    <string name="btn_weekly_log">Weekly Log</string>
+    <string name="btn_main_menu">Main Menu</string>
+    <string name="btn_reset_day">Reset Day</string>
+    <string name="btn_reset_week">Reset Week</string>
+    <string name="today_label">Today</string>
+    <string name="week_label">This Week</string>
+    <string name="food_name_hint">Food name</string>
+    <string name="calories_hint">Calories</string>
     <string name="calories_value">%1$d cal</string>
+    <string name="week_range">%1$s to %2$s</string>
+    <string name="this_week">This Week</string>
+    <string name="image_attached">Image attached</string>
+    <string name="enter_food_and_calories">Enter food and calories</string>
+    <string name="saved">Saved</string>
+    <string name="btn_attach_photo">Attach Photo</string>
+    <string name="day_cleared">Day cleared</string>
+
+
+
+
+
 </resources>

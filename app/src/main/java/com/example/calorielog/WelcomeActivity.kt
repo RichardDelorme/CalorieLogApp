@@ -12,8 +12,10 @@ class WelcomeActivity : ComponentActivity() {
 
         val btn = findViewById<Button>(R.id.btnGetStarted)
         btn.setOnClickListener {
-            startActivity(Intent(this, AddEntryActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
+
+
         }
 
     }

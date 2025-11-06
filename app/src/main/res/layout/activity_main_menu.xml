@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgMeal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons below -->
+    <Button
+        android:id="@+id/btnAddEntry"
+        android:text="@string/btn_add_entry"
+        android:minHeight="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnDailyLog"
+        android:text="@string/btn_daily_log"
+        android:minHeight="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnWeeklyLog"
+        android:text="@string/btn_weekly_log"
+        android:minHeight="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>
+

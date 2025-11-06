@@ -4,22 +4,16 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/txtDate"
+        android:id="@+id/txtWeekRange"
         android:textStyle="bold" android:textSize="18sp"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
-        tools:text="Entries for 2025-10-30" />
+        android:layout_marginBottom="8dp"
+        android:text="@string/week_label" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
+        android:id="@+id/recyclerWeek"
         android:layout_width="match_parent" android:layout_height="0dp"
-        android:layout_weight="1" android:layout_marginTop="8dp" />
-
-    <TextView
-        android:id="@+id/txtDailyTotal"
-        android:textSize="16sp" android:textStyle="bold"
-        android:paddingTop="8dp"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        tools:text="Total: 1234 cal" />
+        android:layout_weight="1" />
 
     <LinearLayout
         style="?android:attr/buttonBarStyle"
@@ -30,7 +24,7 @@
         android:layout_marginTop="8dp">
 
         <Button
-            android:id="@+id/btnHome"
+            android:id="@+id/btnHomeWeek"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,13 +36,13 @@
             tools:ignore="VisualLintButtonSize" />
 
         <Button
-            android:id="@+id/btnResetDay"
+            android:id="@+id/btnResetWeek"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:minHeight="56dp"
-            android:text="@string/btn_reset_day"
+            android:text="@string/btn_reset_week"
             android:textColor="#00796B"
             tools:ignore="VisualLintButtonSize" />
     </LinearLayout>
